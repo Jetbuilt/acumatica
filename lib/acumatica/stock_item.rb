@@ -6,7 +6,7 @@ module Acumatica
       params['$select'] = select if select
       params['$filter'] = filter if filter
       params['$expand'] = expand if expand
-      params['$offset'] = offset if offset
+      params['$skip']   = offset if offset
       params['$top']    = limit  if limit
 
       response = Acumatica::Client.instance.connection.get do |req|
