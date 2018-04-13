@@ -15,7 +15,7 @@ module Acumatica
       @connection ||= Faraday.new do |conn|
         conn.request :json
 
-        if token.present?
+        if token
           conn.request :oauth2, token
         else
           conn.use :cookie_jar
