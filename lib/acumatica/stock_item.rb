@@ -1,5 +1,12 @@
 module Acumatica
   class StockItem < OpenStruct
+    def self.create(params)
+      Acumatica::Client.instance.connection.put do |req|
+        req.url url
+        req.body = params
+      end
+    end
+
     def self.find_all(select: nil, filter: nil, expand: nil, offset: nil, limit: nil)
       params = {}
 

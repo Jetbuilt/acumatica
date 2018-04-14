@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    acumatica (0.1.0)
+    acumatica (0.2.0)
       faraday
       faraday-cookie_jar
       faraday_middleware

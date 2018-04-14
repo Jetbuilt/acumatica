@@ -37,11 +37,22 @@ acumatica.stock_items.find_all(
   expand: 'Attributes'
 )
 
+acumatica.stock_items.create({
+  "InventoryID": { "value": "TEST" },
+  "Description": { "value": "Test Item" },
+  "Attributes": [
+    {
+      "AttributeID": { "value": "Manufacturer" },
+      "Value":       { "value": "ACME" }
+    }
+  ]
+})
+
 acumatica.logout
 ```    
 
 ## NOTES
-- Currently only querying of StockItems has been implemented - pull requests welcome!
+- Currently only querying and creating StockItems has been implemented - pull requests welcome!
 - Querying Acumatica can be very slow, account for that when designing your integration.
 - Some Acumatica installations limit the number of concurrent users, so make sure to logout when finished.
 
