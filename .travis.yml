@@ -1,0 +1,12 @@
+language: ruby
+
+rvm:
+  - 2.2
+  - 2.3
+  - 2.4
+
+env:
+  - ACUMATICA_URL=https://acumatica.example.org
+
+notifications:
+  email: false
