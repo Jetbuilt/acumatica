@@ -28,7 +28,8 @@ RSpec.describe Acumatica::StockItem do
       described_class.new(
         "ItemStatus" => { "value" => "active" },
         "Attributes" => [
-          { "AttributeID" => { "value" => "Manufacturer" }, "Value" => { "value" => "ACME" } }
+          { "AttributeID" => { "value" => "Manufacturer" }, "Value" => { "value" => "ACME" } },
+          { "AttributeID" => { "value" => "WHAT DOES THE FOX SAY" }, "Value" => { "value" => "?" } }
         ]
       )
     end
@@ -39,6 +40,10 @@ RSpec.describe Acumatica::StockItem do
 
     it "converts attributes to ruby style methods on the resource" do
       expect(resource.manufacturer).to eql("ACME")
+    end
+
+    it "handles spaces and uppercase well in attribute id names" do
+      expect(resource.what_does_the_fox_say).to eql("?")
     end
   end
 end
