@@ -10,7 +10,7 @@ RSpec.describe Acumatica::Client do
   let(:password) { ENV['ACUMATICA_PASSWORD'] }
 
   describe '#login', :vcr do
-    subject { client.login }
+    subject(:request) { client.login }
 
     context 'when login succeeds' do
       it { is_expected.to be(true) }
@@ -18,7 +18,10 @@ RSpec.describe Acumatica::Client do
 
     context 'when login fails' do
       let(:password) { nil }
-      it { is_expected.to be(false) }
+
+      it 'raises an error' do
+        expect { request }.to raise_error(Acumatica::InternalServerError, /Invalid credentials/)
+      end
     end
   end
 
