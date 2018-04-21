@@ -5,6 +5,7 @@ require 'vcr'
 require 'acumatica'
 
 require 'support/client'
+require 'support/acumatica_resource'
 
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/cassettes'

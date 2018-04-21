@@ -1,3 +1,9 @@
+require "faraday"
+require "faraday"
+require "faraday_middleware"
+require "faraday-cookie_jar"
+require "singleton"
+
 module Acumatica
   class Client
     include Singleton
@@ -9,6 +15,10 @@ module Acumatica
     def self.configure
       yield(instance)
       instance
+    end
+
+    def base_url
+      @base_url ||= URI.join(url, "entity/Default/#{API_VERSION}/")
     end
 
     def connection
