@@ -12,8 +12,8 @@ http_interactions:
       Content-Type:
       - application/json
       Cookie:
-      - ASP.NET_SessionId=ffebeh41m3tq5edqaz40fj5w; CompanyID=CCSTest; LegacyUI=0;
-        Locale=TimeZone=GMTM0700A&Culture=en-US; UserBranch=1; requestid=9112
+      - ASP.NET_SessionId=w14apmqbrsl2jag44cjy2teg; CompanyID=CCSTest; LegacyUI=0;
+        Locale=TimeZone=GMTM0700A&Culture=en-US; UserBranch=1; requestid=40917
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -28,23 +28,23 @@ http_interactions:
       X-Handled-By:
       - Acumatica-PX.Export/AuthenticationManagerModule
       Set-Cookie:
-      - ".ASPXAUTH=608B819F09915D19326F0CFC4B49391A89EA5EF65A0594CD4D432B9648A5CD8F82D7A4999D0732FF9D79E811D0AB3F0AB6C4A1D0BDC26BC9B9CC290535949549A29158717CA224702E656111A00887B3BCD4B0B734C79B37CE7719868E12BF2FEFFE8DE01880E7FF232FBBDC67FD734AEA688907B5FF2C21CA32F380BC5DF7B08303481E;
+      - ".ASPXAUTH=A5ADAC7D58D10AF7F3E91C44C4FB535519A9B344D1762C0B99F095BD3A30220D7A0D70825ADEE26D77B6B771D33C70B7F898DF76D33058631E9AD7FEDD330CA8574E48A9B93AB16A6FD7CE2A2DC5218E1035F4C0437170593ED95ABFEF565D9BB852D76C4CAFD6AA2A573C7E28F7827CEF21248B78D393F9AB04F8090C2CFE116BCAED1F;
         path=/; HttpOnly"
-      - CompanyID=CCSTest; expires=Sun, 22-Apr-2018 22:36:23 GMT; path=/
+      - CompanyID=CCSTest; expires=Tue, 24-Apr-2018 00:08:57 GMT; path=/
       - LegacyUI=0; path=/
-      - Locale=Culture=en-US&TimeZone=GMTM0700A; expires=Sun, 22-Apr-2018 22:36:23
+      - Locale=Culture=en-US&TimeZone=GMTM0700A; expires=Tue, 24-Apr-2018 00:08:57
         GMT; path=/
       - UserBranch=1; path=/
-      - requestid=9113; path=/
+      - requestid=40918; path=/
       X-Powered-By:
       - ASP.NET
       Date:
-      - Thu, 19 Apr 2018 22:36:23 GMT
+      - Sat, 21 Apr 2018 00:08:56 GMT
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Thu, 19 Apr 2018 22:36:23 GMT
+  recorded_at: Sat, 21 Apr 2018 00:08:57 GMT
 - request:
     method: get
     uri: PLACEHOLDER_URL/entity/Default/6.00.001/StockItem?$top=1
@@ -55,9 +55,9 @@ http_interactions:
       User-Agent:
       - Faraday v0.14.0
       Cookie:
-      - ".ASPXAUTH=608B819F09915D19326F0CFC4B49391A89EA5EF65A0594CD4D432B9648A5CD8F82D7A4999D0732FF9D79E811D0AB3F0AB6C4A1D0BDC26BC9B9CC290535949549A29158717CA224702E656111A00887B3BCD4B0B734C79B37CE7719868E12BF2FEFFE8DE01880E7FF232FBBDC67FD734AEA688907B5FF2C21CA32F380BC5DF7B08303481E;
-        ASP.NET_SessionId=ffebeh41m3tq5edqaz40fj5w; CompanyID=CCSTest; LegacyUI=0;
-        Locale=Culture=en-US&TimeZone=GMTM0700A; UserBranch=1; requestid=9113"
+      - ".ASPXAUTH=A5ADAC7D58D10AF7F3E91C44C4FB535519A9B344D1762C0B99F095BD3A30220D7A0D70825ADEE26D77B6B771D33C70B7F898DF76D33058631E9AD7FEDD330CA8574E48A9B93AB16A6FD7CE2A2DC5218E1035F4C0437170593ED95ABFEF565D9BB852D76C4CAFD6AA2A573C7E28F7827CEF21248B78D393F9AB04F8090C2CFE116BCAED1F;
+        ASP.NET_SessionId=w14apmqbrsl2jag44cjy2teg; CompanyID=CCSTest; LegacyUI=0;
+        Locale=Culture=en-US&TimeZone=GMTM0700A; UserBranch=1; requestid=40918"
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -80,16 +80,16 @@ http_interactions:
       X-Powered-By:
       - ASP.NET
       Date:
-      - Thu, 19 Apr 2018 22:36:24 GMT
+      - Sat, 21 Apr 2018 00:08:57 GMT
       Content-Length:
       - '652'
     body:
       encoding: UTF-8
-      string: '[{"id":"5e5c56d2-4d6c-486f-b347-3271efe9ccf5","rowNumber":1,"note":"","BaseUOM":{"value":"EACH"},"DefaultIssueLocationID":{},"DefaultReceiptLocationID":{"value":"1A"},"DefaultWarehouseID":{"value":"MAIN"},"Description":{"value":"BROADCAST
+      string: '[{"id":"6b5a380d-6706-47fa-8090-81cddbe21eab","rowNumber":1,"note":"","BaseUOM":{"value":"EACH"},"DefaultIssueLocationID":{},"DefaultReceiptLocationID":{"value":"1A"},"DefaultWarehouseID":{"value":"MAIN"},"Description":{"value":"BROADCAST
         PIX OPTION 800 CONTROL FOR SON"},"ImageUrl":{},"InventoryID":{"value":"#800"},"ItemClass":{"value":"MISC
         STOCK"},"ItemStatus":{"value":"Active"},"ItemType":{"value":"Finished Good"},"LastModified":{"value":"2017-01-07T15:22:15.11+00:00"},"LotSerialClass":{"value":"SERIAL"},"PurchaseUOM":{"value":"EACH"},"SalesUOM":{"value":"EACH"},"Volume":{"value":0.000000},"Weight":{"value":0.000000},"custom":{},"files":[]}]'
     http_version: 
-  recorded_at: Thu, 19 Apr 2018 22:36:24 GMT
+  recorded_at: Sat, 21 Apr 2018 00:08:57 GMT
 - request:
     method: post
     uri: PLACEHOLDER_URL/entity/auth/logout
@@ -100,9 +100,9 @@ http_interactions:
       User-Agent:
       - Faraday v0.14.0
       Cookie:
-      - ".ASPXAUTH=608B819F09915D19326F0CFC4B49391A89EA5EF65A0594CD4D432B9648A5CD8F82D7A4999D0732FF9D79E811D0AB3F0AB6C4A1D0BDC26BC9B9CC290535949549A29158717CA224702E656111A00887B3BCD4B0B734C79B37CE7719868E12BF2FEFFE8DE01880E7FF232FBBDC67FD734AEA688907B5FF2C21CA32F380BC5DF7B08303481E;
-        ASP.NET_SessionId=ffebeh41m3tq5edqaz40fj5w; CompanyID=CCSTest; LegacyUI=0;
-        Locale=TimeZone=GMTM0700A&Culture=en-US; UserBranch=1; requestid=9113"
+      - ".ASPXAUTH=A5ADAC7D58D10AF7F3E91C44C4FB535519A9B344D1762C0B99F095BD3A30220D7A0D70825ADEE26D77B6B771D33C70B7F898DF76D33058631E9AD7FEDD330CA8574E48A9B93AB16A6FD7CE2A2DC5218E1035F4C0437170593ED95ABFEF565D9BB852D76C4CAFD6AA2A573C7E28F7827CEF21248B78D393F9AB04F8090C2CFE116BCAED1F;
+        ASP.NET_SessionId=w14apmqbrsl2jag44cjy2teg; CompanyID=CCSTest; LegacyUI=0;
+        Locale=TimeZone=GMTM0700A&Culture=en-US; UserBranch=1; requestid=40918"
       Content-Length:
       - '0'
       Accept-Encoding:
@@ -123,14 +123,14 @@ http_interactions:
       - LegacyUI=0; path=/
       - Locale=TimeZone=GMTM0700A&Culture=en-US; path=/
       - UserBranch=1; path=/
-      - requestid=9114; path=/
+      - requestid=40919; path=/
       X-Powered-By:
       - ASP.NET
       Date:
-      - Thu, 19 Apr 2018 22:36:24 GMT
+      - Sat, 21 Apr 2018 00:08:57 GMT
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Thu, 19 Apr 2018 22:36:24 GMT
+  recorded_at: Sat, 21 Apr 2018 00:08:58 GMT
 recorded_with: VCR 4.0.0
