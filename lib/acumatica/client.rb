@@ -30,7 +30,7 @@ module Acumatica
         else
           conn.use :cookie_jar
         end
-
+        conn.use Acumatica::ErrorHandler
         conn.response :json
         conn.adapter Faraday.default_adapter
       end
