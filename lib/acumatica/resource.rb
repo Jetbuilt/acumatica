@@ -1,3 +1,4 @@
+require "active_support/core_ext/string/inflections"
 require "ostruct"
 
 module Acumatica
@@ -47,8 +48,8 @@ module Acumatica
 
     private
 
-    def methodify(word)
-      word.gsub(/([a-z])([A-Z])|\s/,'\1_\2').downcase
+    def methodify(string)
+      string.underscore.parameterize(separator: '_')
     end
   end
 end
