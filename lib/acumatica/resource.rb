@@ -1,4 +1,6 @@
 require "active_support/core_ext/string/inflections"
+require "active_support/core_ext/hash/keys"
+require "active_support/core_ext/hash/transform_values"
 require "ostruct"
 
 module Acumatica
@@ -6,7 +8,7 @@ module Acumatica
     def self.create(attrs = {})
       response = Acumatica::Client.instance.connection.put do |req|
         req.url url
-        req.body = attrs
+        req.body = format_params(attrs) if attrs
       end
 
       self.new(response.body)
@@ -50,6 +52,12 @@ module Acumatica
 
     def methodify(string)
       string.underscore.parameterize(separator: '_')
+    end
+
+    def self.format_params(attrs)
+      attrs.transform_keys!{ |key| key.to_s.camelize }
+      attrs.transform_values!{ |value| value.is_a?(String) ? { "value" => value } : value }
+      attrs
     end
   end
 end

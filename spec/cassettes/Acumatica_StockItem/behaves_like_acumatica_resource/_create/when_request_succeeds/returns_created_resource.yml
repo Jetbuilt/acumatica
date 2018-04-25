@@ -12,8 +12,8 @@ http_interactions:
       Content-Type:
       - application/json
       Cookie:
-      - ASP.NET_SessionId=nykntfsi352ziicu45xvkvqh; CompanyID=CCSTest; LegacyUI=0;
-        Locale=TimeZone=GMTM0700A&Culture=en-US; UserBranch=1; requestid=40919
+      - CompanyID=CCSTest; LegacyUI=0; Locale=TimeZone=GMTM0700A&Culture=en-US; UserBranch=1;
+        requestid=77266
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -28,23 +28,24 @@ http_interactions:
       X-Handled-By:
       - Acumatica-PX.Export/AuthenticationManagerModule
       Set-Cookie:
-      - ".ASPXAUTH=35C0D544F848E93268B5C24A3F0F7546A2982317A0FDC89ABA9F84561CC52893A6F3B89834EAB56C0E00A0C3B49B13EB565C50879C4BCBBFBC87535259165FDD25C115BA66E063E6292C8AB86C61CAE565889B7AABAF21B1F0345F6CD37F43DF7BEDE68DE359E3B0A8FC78F25785CB0C9A271ADFAF441D2DB225971CCD647C2D3628FA96;
+      - ".ASPXAUTH=AB994AA9EA4232668FD6FF0F0176F08D92469DAD3812817C2FDD12CD928E32B53D67FA879D230D99B7C1FBF54CDA2168D15A2B586B42D593AD011B63F3D66CBE7A2F6880E56C5C03B6A944B18E492E0EFE572F2D433E9460BCEDCB9594C5DBCE6E448D36B33D8F04FBF1E74A3A7317400D2AFD7B9226F697EB1434DF3C3375BF982DED4E;
         path=/; HttpOnly"
-      - CompanyID=CCSTest; expires=Tue, 24-Apr-2018 02:04:56 GMT; path=/
+      - ASP.NET_SessionId=ol2yoahimqcxrj4owfjb0q52; path=/; HttpOnly
+      - CompanyID=CCSTest; expires=Sat, 28-Apr-2018 00:37:48 GMT; path=/
       - LegacyUI=0; path=/
-      - Locale=Culture=en-US&TimeZone=GMTM0700A; expires=Tue, 24-Apr-2018 02:04:56
+      - Locale=Culture=en-US&TimeZone=GMTM0700A; expires=Sat, 28-Apr-2018 00:37:48
         GMT; path=/
       - UserBranch=1; path=/
-      - requestid=41178; path=/
+      - requestid=77268; path=/
       X-Powered-By:
       - ASP.NET
       Date:
-      - Sat, 21 Apr 2018 02:04:55 GMT
+      - Wed, 25 Apr 2018 00:37:47 GMT
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Sat, 21 Apr 2018 02:04:56 GMT
+  recorded_at: Wed, 25 Apr 2018 00:37:48 GMT
 - request:
     method: put
     uri: PLACEHOLDER_URL/entity/Default/6.00.001/StockItem
@@ -57,9 +58,9 @@ http_interactions:
       Content-Type:
       - application/json
       Cookie:
-      - ".ASPXAUTH=35C0D544F848E93268B5C24A3F0F7546A2982317A0FDC89ABA9F84561CC52893A6F3B89834EAB56C0E00A0C3B49B13EB565C50879C4BCBBFBC87535259165FDD25C115BA66E063E6292C8AB86C61CAE565889B7AABAF21B1F0345F6CD37F43DF7BEDE68DE359E3B0A8FC78F25785CB0C9A271ADFAF441D2DB225971CCD647C2D3628FA96;
-        ASP.NET_SessionId=nykntfsi352ziicu45xvkvqh; CompanyID=CCSTest; LegacyUI=0;
-        Locale=Culture=en-US&TimeZone=GMTM0700A; UserBranch=1; requestid=41178"
+      - ".ASPXAUTH=AB994AA9EA4232668FD6FF0F0176F08D92469DAD3812817C2FDD12CD928E32B53D67FA879D230D99B7C1FBF54CDA2168D15A2B586B42D593AD011B63F3D66CBE7A2F6880E56C5C03B6A944B18E492E0EFE572F2D433E9460BCEDCB9594C5DBCE6E448D36B33D8F04FBF1E74A3A7317400D2AFD7B9226F697EB1434DF3C3375BF982DED4E;
+        ASP.NET_SessionId=ol2yoahimqcxrj4owfjb0q52; CompanyID=CCSTest; LegacyUI=0;
+        Locale=Culture=en-US&TimeZone=GMTM0700A; UserBranch=1; requestid=77268"
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -79,19 +80,19 @@ http_interactions:
       - LegacyUI=0; path=/
       - Locale=TimeZone=GMTM0700A&Culture=en-US; path=/
       - UserBranch=1; path=/
-      - requestid=41179; path=/
+      - requestid=77269; path=/
       X-Powered-By:
       - ASP.NET
       Date:
-      - Sat, 21 Apr 2018 02:04:56 GMT
+      - Wed, 25 Apr 2018 00:37:53 GMT
       Content-Length:
-      - '602'
+      - '601'
     body:
       encoding: UTF-8
-      string: '{"id":"892bc667-1f22-4396-a7b3-3217a81c812d","rowNumber":1,"note":null,"BaseUOM":{"value":"EACH"},"DefaultIssueLocationID":{},"DefaultReceiptLocationID":{"value":"1A"},"DefaultWarehouseID":{"value":"MAIN"},"Description":{},"ImageUrl":{},"InventoryID":{"value":"<NEW>"},"ItemClass":{"value":"PROJECTOR"},"ItemStatus":{"value":"Active"},"ItemType":{"value":"Finished
-        Good"},"LastModified":{"value":"2018-04-21T02:04:56.76+00:00"},"LotSerialClass":{"value":"SERIAL"},"PurchaseUOM":{"value":"EACH"},"SalesUOM":{"value":"EACH"},"Volume":{"value":0.000000},"Weight":{"value":0.000000},"custom":{},"files":[]}'
+      string: '{"id":"96bbcdee-0919-4da2-8def-e14f60ab9279","rowNumber":1,"note":null,"BaseUOM":{"value":"EACH"},"DefaultIssueLocationID":{},"DefaultReceiptLocationID":{"value":"1A"},"DefaultWarehouseID":{"value":"MAIN"},"Description":{},"ImageUrl":{},"InventoryID":{"value":"<NEW>"},"ItemClass":{"value":"PROJECTOR"},"ItemStatus":{"value":"Active"},"ItemType":{"value":"Finished
+        Good"},"LastModified":{"value":"2018-04-25T00:37:52.9+00:00"},"LotSerialClass":{"value":"SERIAL"},"PurchaseUOM":{"value":"EACH"},"SalesUOM":{"value":"EACH"},"Volume":{"value":0.000000},"Weight":{"value":0.000000},"custom":{},"files":[]}'
     http_version: 
-  recorded_at: Sat, 21 Apr 2018 02:04:56 GMT
+  recorded_at: Wed, 25 Apr 2018 00:37:53 GMT
 - request:
     method: post
     uri: PLACEHOLDER_URL/entity/auth/logout
@@ -102,9 +103,9 @@ http_interactions:
       User-Agent:
       - Faraday v0.15.0
       Cookie:
-      - ".ASPXAUTH=35C0D544F848E93268B5C24A3F0F7546A2982317A0FDC89ABA9F84561CC52893A6F3B89834EAB56C0E00A0C3B49B13EB565C50879C4BCBBFBC87535259165FDD25C115BA66E063E6292C8AB86C61CAE565889B7AABAF21B1F0345F6CD37F43DF7BEDE68DE359E3B0A8FC78F25785CB0C9A271ADFAF441D2DB225971CCD647C2D3628FA96;
-        ASP.NET_SessionId=nykntfsi352ziicu45xvkvqh; CompanyID=CCSTest; LegacyUI=0;
-        Locale=TimeZone=GMTM0700A&Culture=en-US; UserBranch=1; requestid=41179"
+      - ".ASPXAUTH=AB994AA9EA4232668FD6FF0F0176F08D92469DAD3812817C2FDD12CD928E32B53D67FA879D230D99B7C1FBF54CDA2168D15A2B586B42D593AD011B63F3D66CBE7A2F6880E56C5C03B6A944B18E492E0EFE572F2D433E9460BCEDCB9594C5DBCE6E448D36B33D8F04FBF1E74A3A7317400D2AFD7B9226F697EB1434DF3C3375BF982DED4E;
+        ASP.NET_SessionId=ol2yoahimqcxrj4owfjb0q52; CompanyID=CCSTest; LegacyUI=0;
+        Locale=TimeZone=GMTM0700A&Culture=en-US; UserBranch=1; requestid=77269"
       Content-Length:
       - '0'
       Accept-Encoding:
@@ -125,14 +126,14 @@ http_interactions:
       - LegacyUI=0; path=/
       - Locale=TimeZone=GMTM0700A&Culture=en-US; path=/
       - UserBranch=1; path=/
-      - requestid=41180; path=/
+      - requestid=77271; path=/
       X-Powered-By:
       - ASP.NET
       Date:
-      - Sat, 21 Apr 2018 02:04:56 GMT
+      - Wed, 25 Apr 2018 00:37:53 GMT
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Sat, 21 Apr 2018 02:04:57 GMT
+  recorded_at: Wed, 25 Apr 2018 00:37:53 GMT
 recorded_with: VCR 4.0.0

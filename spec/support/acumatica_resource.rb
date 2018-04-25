@@ -1,17 +1,27 @@
 require 'support/client'
 
-RSpec.shared_examples "acumatica resource" do
+RSpec.shared_examples "acumatica resource" do |valid_params|
   let(:client) { configure_client }
 
   describe ".create", :vcr do
     before { client.login }
     after  { client.logout }
 
-    subject(:request) { described_class.create }
+    subject(:request) { described_class.create(params) }
 
     context 'when request succeeds' do
+      let(:params) { valid_params }
+
       it "returns created resource" do
         is_expected.to be_a(described_class)
+      end
+    end
+
+    context 'when request fails' do
+      let(:params) { nil }
+
+      it 'raises an error' do
+        expect { request }.to raise_error(Acumatica::BadRequest)
       end
     end
   end

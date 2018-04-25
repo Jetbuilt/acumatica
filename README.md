@@ -20,6 +20,8 @@ Or install it yourself as:
 
 ## Usage
 
+### Client
+
 ```
 acumatica = Acumatica::Client.configure do |config|
   config.url = "https://mycompany.acumatica.com"
@@ -29,6 +31,20 @@ end
 
 acumatica.login
 
+acumatica.stock_items.find_all(
+  select: 'Attributes,InventoryID',
+  filter: '',
+  offset: 0,
+  limit:  100,
+  expand: 'Attributes'
+)
+
+acumatica.logout
+```    
+
+### StockItem
+
+```
 acumatica.stock_items.find_all(
   select: 'Attributes,InventoryID',
   filter: '',
@@ -47,18 +63,25 @@ acumatica.stock_items.create({
     }
   ]
 })
+```
 
-acumatica.logout
-```    
+### Customer
+
+```
+acumatica.customers.find_all(limit: 1)
+acumatica.customers.create(customer_name: "ACME", tax_zone: "TAXES!")
+```
 
 ## NOTES
-- Currently only querying and creating StockItems has been implemented - pull requests welcome!
-- Querying Acumatica can be very slow, account for that when designing your integration.
-- Some Acumatica installations limit the number of concurrent users, so make sure to logout when finished.
+- This library is very much a work in progress - pull requests welcome!
+- Querying Acumatica can be very slow, account for that when designing your integration. For
+  example, calling `find_all` on a resource without a limit may take minutes to complete the
+  request. YMMV.
+- Some Acumatica installations limit the number of concurrent users, so make sure to logout when
+  finished.
 
 ## TODO
 - OAuth Authentication (coming soon)
-- Tests
 
 ## Contributing
 
