@@ -10,7 +10,7 @@ module Acumatica
 
     API_VERSION = "6.00.001".freeze
 
-    attr_accessor :url, :name, :password, :token
+    attr_accessor :url, :name, :password, :token, :debug
 
     def self.configure
       yield(instance)
@@ -31,7 +31,9 @@ module Acumatica
           conn.use :cookie_jar
         end
         conn.use Acumatica::ErrorHandler
+
         conn.response :json
+        conn.response :logger, nil, bodies: true if debug
         conn.adapter Faraday.default_adapter
       end
     end
