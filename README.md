@@ -69,7 +69,7 @@ acumatica.stock_items.create({
 
 ```
 acumatica.customers.find_all(limit: 1)
-acumatica.customers.create(customer_name: "ACME", tax_zone: "TAXES!")
+acumatica.customers.create(customer_id: "123", customer_name: "ACME", tax_zone: "TAXES!")
 ```
 
 ## NOTES
