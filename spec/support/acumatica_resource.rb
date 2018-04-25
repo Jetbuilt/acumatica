@@ -11,7 +11,7 @@ RSpec.shared_examples "acumatica resource" do |valid_params|
 
     subject(:request) { described_class.create(params) }
 
-    context 'when request succeeds' do
+    context "when request succeeds" do
       let(:params) { valid_params }
 
       it "returns created resource" do
@@ -19,10 +19,10 @@ RSpec.shared_examples "acumatica resource" do |valid_params|
       end
     end
 
-    context 'when request fails' do
+    context "when request fails" do
       let(:params) { nil }
 
-      it 'raises an error' do
+      it "raises an error" do
         expect { request }.to raise_error(Acumatica::BadRequest)
       end
     end
@@ -39,7 +39,7 @@ RSpec.shared_examples "acumatica resource" do |valid_params|
     end
   end
 
-  describe '.new' do
+  describe ".new" do
     subject(:resource) do
       described_class.new(
         "ItemStatus" => { "value" => "active" },

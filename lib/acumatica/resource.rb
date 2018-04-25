@@ -64,6 +64,9 @@ module Acumatica
       attributes.each { |a| self[methodify(a['AttributeID']['value'])] = a['Value']['value'] }
     end
 
+    # translate keys that don't map directly
+    KEY_MAP = { customer_id: 'CustomerID' }.freeze
+
     def methodify(string)
       string.underscore.parameterize(separator: '_')
     end
