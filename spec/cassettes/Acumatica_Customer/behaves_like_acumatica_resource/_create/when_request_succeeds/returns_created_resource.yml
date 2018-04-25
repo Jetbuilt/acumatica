@@ -11,6 +11,9 @@ http_interactions:
       - Faraday v0.15.0
       Content-Type:
       - application/json
+      Cookie:
+      - ASP.NET_SessionId=wey5my1dcymarbxkhcpi3xva; CompanyID=CCSTest; LegacyUI=0;
+        Locale=TimeZone=GMTM0700A&Culture=en-US; UserBranch=1; requestid=76327
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -25,39 +28,38 @@ http_interactions:
       X-Handled-By:
       - Acumatica-PX.Export/AuthenticationManagerModule
       Set-Cookie:
-      - ".ASPXAUTH=E978471F5C3817BF8C9205DE8D6790E71F0B10D5FA5D1B2E0F3D3229612A2029B2E2A131FE1933B5467E7E8C5F9E54FE9544EF29AAD09030A037A4B7DC88D55736755781FF5E6F5E3430FFD9AABCE9A70BEE381716C52932ACD2FEB1837FECFE74A5653C00B8A82174D46FF48F716E4411988EE17AC1751364E6D8E88FAB06A6DB2729DE;
+      - ".ASPXAUTH=B2FB3634C9BE4EF32B1140A12906CCA51EF5AEE2A7D989ED27DB281FF5773AEBBF8FC0DBDCC3674BC76C71D597A78E40404B64F604A9863A65289EF32774F194D888031BA8F53A28766D5E09086C9C0C132906C341652F48182CA4BC7ADB48DAA14189C8F4688C30A0E4269AEF35A6A540303C47E10D73664C9471C38AF20AF669F6E431;
         path=/; HttpOnly"
-      - ASP.NET_SessionId=ozjduma3mvhwbjcir5szh4qg; path=/; HttpOnly
-      - CompanyID=CCSTest; expires=Sat, 28-Apr-2018 00:30:38 GMT; path=/
+      - CompanyID=CCSTest; expires=Sat, 28-Apr-2018 18:33:39 GMT; path=/
       - LegacyUI=0; path=/
-      - Locale=Culture=en-US&TimeZone=GMTM0700A; expires=Sat, 28-Apr-2018 00:30:38
+      - Locale=Culture=en-US&TimeZone=GMTM0700A; expires=Sat, 28-Apr-2018 18:33:39
         GMT; path=/
       - UserBranch=1; path=/
-      - requestid=77228; path=/
+      - requestid=100556; path=/
       X-Powered-By:
       - ASP.NET
       Date:
-      - Wed, 25 Apr 2018 00:30:38 GMT
+      - Wed, 25 Apr 2018 18:33:39 GMT
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Wed, 25 Apr 2018 00:30:39 GMT
+  recorded_at: Wed, 25 Apr 2018 18:33:40 GMT
 - request:
     method: put
     uri: PLACEHOLDER_URL/entity/Default/6.00.001/Customer
     body:
       encoding: UTF-8
-      string: '{"CustomerName":{"value":"ACME"},"TaxZone":{"value":"TX1"}}'
+      string: '{"CustomerID":{"value":"123"},"CustomerName":{"value":"ACME"},"TaxZone":{"value":"TX1"}}'
     headers:
       User-Agent:
       - Faraday v0.15.0
       Content-Type:
       - application/json
       Cookie:
-      - ".ASPXAUTH=E978471F5C3817BF8C9205DE8D6790E71F0B10D5FA5D1B2E0F3D3229612A2029B2E2A131FE1933B5467E7E8C5F9E54FE9544EF29AAD09030A037A4B7DC88D55736755781FF5E6F5E3430FFD9AABCE9A70BEE381716C52932ACD2FEB1837FECFE74A5653C00B8A82174D46FF48F716E4411988EE17AC1751364E6D8E88FAB06A6DB2729DE;
-        ASP.NET_SessionId=ozjduma3mvhwbjcir5szh4qg; CompanyID=CCSTest; LegacyUI=0;
-        Locale=Culture=en-US&TimeZone=GMTM0700A; UserBranch=1; requestid=77228"
+      - ".ASPXAUTH=B2FB3634C9BE4EF32B1140A12906CCA51EF5AEE2A7D989ED27DB281FF5773AEBBF8FC0DBDCC3674BC76C71D597A78E40404B64F604A9863A65289EF32774F194D888031BA8F53A28766D5E09086C9C0C132906C341652F48182CA4BC7ADB48DAA14189C8F4688C30A0E4269AEF35A6A540303C47E10D73664C9471C38AF20AF669F6E431;
+        ASP.NET_SessionId=wey5my1dcymarbxkhcpi3xva; CompanyID=CCSTest; LegacyUI=0;
+        Locale=Culture=en-US&TimeZone=GMTM0700A; UserBranch=1; requestid=100556"
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -77,21 +79,21 @@ http_interactions:
       - LegacyUI=0; path=/
       - Locale=TimeZone=GMTM0700A&Culture=en-US; path=/
       - UserBranch=1; path=/
-      - requestid=77229; path=/
+      - requestid=100557; path=/
       X-Powered-By:
       - ASP.NET
       Date:
-      - Wed, 25 Apr 2018 00:30:38 GMT
+      - Wed, 25 Apr 2018 18:33:39 GMT
       Content-Length:
-      - '1403'
+      - '1402'
     body:
       encoding: UTF-8
-      string: '{"id":"3b367aba-54b2-4ba2-9ccc-ecbd60348563","rowNumber":1,"note":"","AccountRef":{},"AutoApplyPayments":{"value":false},"BillingAddressSameAsMain":{"value":true},"BillingContactSameAsMain":{"value":true},"CreditDaysPastDue":{"value":0},"CreditLimit":{"value":0.0000},"CreditVerification":{"value":"Days
-        Past Due"},"CurrencyID":{"value":"USD"},"CustomerClass":{"value":"CCS"},"CustomerID":{"value":"<NEW>"},"CustomerName":{"value":"ACME"},"EnableWriteOffs":{"value":true},"FirstInvoiceDate":{},"FOBPoint":{},"LastModified":{"value":"2018-04-25T00:30:39.57+00:00"},"LeadTimedays":{},"LocationName":{"value":"Primary
+      string: '{"id":"150739a5-a6a1-4e23-9245-6a730c2d10ca","rowNumber":1,"note":"","AccountRef":{},"AutoApplyPayments":{"value":false},"BillingAddressSameAsMain":{"value":true},"BillingContactSameAsMain":{"value":true},"CreditDaysPastDue":{"value":0},"CreditLimit":{"value":0.0000},"CreditVerification":{"value":"Days
+        Past Due"},"CurrencyID":{"value":"USD"},"CustomerClass":{"value":"CCS"},"CustomerID":{"value":"123"},"CustomerName":{"value":"ACME"},"EnableWriteOffs":{"value":true},"FirstInvoiceDate":{},"FOBPoint":{},"LastModified":{"value":"2018-04-25T18:33:40.723+00:00"},"LeadTimedays":{},"LocationName":{"value":"Primary
         Location"},"OpenOrdersBalance":{},"OrderPriority":{"value":0},"ParentRecord":{},"PriceClassID":{},"PrintInvoices":{"value":false},"PrintStatements":{"value":true},"RemainingCreditLimit":{"value":0.0},"ResidentialDelivery":{"value":false},"SaturdayDelivery":{"value":false},"SendInvoicesbyEmail":{"value":false},"SendStatementsbyEmail":{"value":false},"ShippingAddressSameAsMain":{"value":true},"ShippingContactSameAsMain":{"value":true},"ShippingRule":{"value":"Back
         Order Allowed"},"ShippingTerms":{},"ShippingZoneID":{},"ShipVia":{"value":"GROUND"},"StatementCycleID":{"value":"MONTHLY"},"Status":{"value":"Active"},"TaxRegistrationID":{},"TaxZone":{"value":"TX1"},"Terms":{"value":"N30"},"UnreleasedBalance":{},"WarehouseID":{},"WriteOffLimit":{"value":10.0000},"custom":{},"files":[]}'
     http_version: 
-  recorded_at: Wed, 25 Apr 2018 00:30:39 GMT
+  recorded_at: Wed, 25 Apr 2018 18:33:41 GMT
 - request:
     method: post
     uri: PLACEHOLDER_URL/entity/auth/logout
@@ -102,9 +104,9 @@ http_interactions:
       User-Agent:
       - Faraday v0.15.0
       Cookie:
-      - ".ASPXAUTH=E978471F5C3817BF8C9205DE8D6790E71F0B10D5FA5D1B2E0F3D3229612A2029B2E2A131FE1933B5467E7E8C5F9E54FE9544EF29AAD09030A037A4B7DC88D55736755781FF5E6F5E3430FFD9AABCE9A70BEE381716C52932ACD2FEB1837FECFE74A5653C00B8A82174D46FF48F716E4411988EE17AC1751364E6D8E88FAB06A6DB2729DE;
-        ASP.NET_SessionId=ozjduma3mvhwbjcir5szh4qg; CompanyID=CCSTest; LegacyUI=0;
-        Locale=TimeZone=GMTM0700A&Culture=en-US; UserBranch=1; requestid=77229"
+      - ".ASPXAUTH=B2FB3634C9BE4EF32B1140A12906CCA51EF5AEE2A7D989ED27DB281FF5773AEBBF8FC0DBDCC3674BC76C71D597A78E40404B64F604A9863A65289EF32774F194D888031BA8F53A28766D5E09086C9C0C132906C341652F48182CA4BC7ADB48DAA14189C8F4688C30A0E4269AEF35A6A540303C47E10D73664C9471C38AF20AF669F6E431;
+        ASP.NET_SessionId=wey5my1dcymarbxkhcpi3xva; CompanyID=CCSTest; LegacyUI=0;
+        Locale=TimeZone=GMTM0700A&Culture=en-US; UserBranch=1; requestid=100557"
       Content-Length:
       - '0'
       Accept-Encoding:
@@ -125,14 +127,14 @@ http_interactions:
       - LegacyUI=0; path=/
       - Locale=TimeZone=GMTM0700A&Culture=en-US; path=/
       - UserBranch=1; path=/
-      - requestid=77230; path=/
+      - requestid=100558; path=/
       X-Powered-By:
       - ASP.NET
       Date:
-      - Wed, 25 Apr 2018 00:30:40 GMT
+      - Wed, 25 Apr 2018 18:33:41 GMT
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Wed, 25 Apr 2018 00:30:40 GMT
+  recorded_at: Wed, 25 Apr 2018 18:33:41 GMT
 recorded_with: VCR 4.0.0

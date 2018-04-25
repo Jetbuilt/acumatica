@@ -40,9 +40,12 @@ module Acumatica
 
       private
 
+      # translate keys that don't map directly
+      KEY_MAP = { customer_id: 'CustomerID' }.freeze
+
       def format_params(attrs)
-        attrs.transform_keys! { |key| key.to_s.camelize }
-        attrs.transform_values! { |value| value.is_a?(String) ? { "value" => value } : value }
+        attrs.transform_keys! { |key| KEY_MAP[key] || key.to_s.camelize }
+        attrs.transform_values! { |value| value.is_a?(Hash) ? value : { "value" => value } }
         attrs
       end
     end
@@ -63,9 +66,6 @@ module Acumatica
       self.attributes ||= []
       attributes.each { |a| self[methodify(a['AttributeID']['value'])] = a['Value']['value'] }
     end
-
-    # translate keys that don't map directly
-    KEY_MAP = { customer_id: 'CustomerID' }.freeze
 
     def methodify(string)
       string.underscore.parameterize(separator: '_')
