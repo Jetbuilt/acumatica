@@ -1,0 +1,135 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: PLACEHOLDER_URL/entity/auth/login
+    body:
+      encoding: UTF-8
+      string: '{"name":"PLACEHOLDER_USER","password":"PLACEHOLDER_PASSWORD"}'
+    headers:
+      User-Agent:
+      - Faraday v0.15.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Server:
+      - Microsoft-IIS/8.5
+      X-Handled-By:
+      - Acumatica-PX.Export/AuthenticationManagerModule
+      Set-Cookie:
+      - ".ASPXAUTH=1C2AEC42CD422576600117A6794D12917839149C5AD654C533DD1A87DD9919704A199DC05A9914442BB1799274603EB445CF09D1FCBAB181D1CC71D3EF52DB825D8B2245F6FEFE18740A41FC2EC15D256F9421E5DD59823012E70FEC303F04772285DEA910D3E35E8588B6B4399D0D0F232A65F155DCBE068684128A1916EB17940B2A07;
+        path=/; HttpOnly"
+      - ASP.NET_SessionId=aqezgillc05cxau1g1gadmzy; path=/; HttpOnly
+      - CompanyID=CCSTest; expires=Sat, 28-Apr-2018 02:09:17 GMT; path=/
+      - LegacyUI=0; path=/
+      - Locale=Culture=en-US&TimeZone=GMTM0700A; expires=Sat, 28-Apr-2018 02:09:17
+        GMT; path=/
+      - UserBranch=1; path=/
+      - requestid=77918; path=/
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Wed, 25 Apr 2018 02:09:17 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 25 Apr 2018 02:09:17 GMT
+- request:
+    method: put
+    uri: PLACEHOLDER_URL/entity/Default/6.00.001/SalesOrder
+    body:
+      encoding: UTF-8
+      string: '{"CustomerID":{"value":100010}}'
+    headers:
+      User-Agent:
+      - Faraday v0.15.0
+      Content-Type:
+      - application/json
+      Cookie:
+      - ".ASPXAUTH=1C2AEC42CD422576600117A6794D12917839149C5AD654C533DD1A87DD9919704A199DC05A9914442BB1799274603EB445CF09D1FCBAB181D1CC71D3EF52DB825D8B2245F6FEFE18740A41FC2EC15D256F9421E5DD59823012E70FEC303F04772285DEA910D3E35E8588B6B4399D0D0F232A65F155DCBE068684128A1916EB17940B2A07;
+        ASP.NET_SessionId=aqezgillc05cxau1g1gadmzy; CompanyID=CCSTest; LegacyUI=0;
+        Locale=Culture=en-US&TimeZone=GMTM0700A; UserBranch=1; requestid=77918"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Server:
+      - Microsoft-IIS/8.5
+      X-Handled-By:
+      - Acumatica-PX.Export/AuthenticationManagerModule
+      Set-Cookie:
+      - LegacyUI=0; path=/
+      - Locale=TimeZone=GMTM0700A&Culture=en-US; path=/
+      - UserBranch=1; path=/
+      - requestid=77919; path=/
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Wed, 25 Apr 2018 02:09:18 GMT
+      Content-Length:
+      - '1016'
+    body:
+      encoding: UTF-8
+      string: '{"id":"b717f059-08f2-44a8-9180-894e0d9397a8","rowNumber":1,"note":"","BillingAddressOverride":{"value":false},"BillingContactOverride":{"value":false},"CreditHold":{"value":false},"Currency":{"value":"USD"},"CustomerID":{"value":"100010"},"CustomerOrder":{},"Date":{"value":"2018-04-24T00:00:00+00:00"},"Description":{},"DestinationWarehouseID":{},"ExternalReference":{},"Hold":{"value":false},"IsTaxValid":{"value":false},"LastModified":{"value":"2018-04-25T02:09:18.813+00:00"},"LocationID":{"value":"MAIN"},"NewCard":{"value":false},"OrderedQty":{"value":0.0},"OrderNbr":{"value":"0000000031"},"OrderTotal":{"value":0.0},"OrderType":{"value":"SO"},"PaymentCardIdentifier":{},"PaymentMethod":{},"PaymentRef":{},"PreferredWarehouseID":{"value":"MAIN"},"Project":{"value":"X"},"RequestedOn":{"value":"2018-04-24T00:00:00+00:00"},"ShippingAddressOverride":{"value":false},"ShippingContactOverride":{"value":false},"ShipVia":{"value":"GROUND"},"Status":{"value":"Open"},"TaxTotal":{"value":0.0},"custom":{},"files":[]}'
+    http_version: 
+  recorded_at: Wed, 25 Apr 2018 02:09:19 GMT
+- request:
+    method: post
+    uri: PLACEHOLDER_URL/entity/auth/logout
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.0
+      Cookie:
+      - ".ASPXAUTH=1C2AEC42CD422576600117A6794D12917839149C5AD654C533DD1A87DD9919704A199DC05A9914442BB1799274603EB445CF09D1FCBAB181D1CC71D3EF52DB825D8B2245F6FEFE18740A41FC2EC15D256F9421E5DD59823012E70FEC303F04772285DEA910D3E35E8588B6B4399D0D0F232A65F155DCBE068684128A1916EB17940B2A07;
+        ASP.NET_SessionId=aqezgillc05cxau1g1gadmzy; CompanyID=CCSTest; LegacyUI=0;
+        Locale=TimeZone=GMTM0700A&Culture=en-US; UserBranch=1; requestid=77919"
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Server:
+      - Microsoft-IIS/8.5
+      X-Handled-By:
+      - Acumatica-PX.Export/AuthenticationManagerModule
+      Set-Cookie:
+      - ".ASPXAUTH=; expires=Tue, 12-Oct-1999 00:00:00 GMT; path=/; HttpOnly"
+      - LegacyUI=0; path=/
+      - Locale=TimeZone=GMTM0700A&Culture=en-US; path=/
+      - UserBranch=1; path=/
+      - requestid=77920; path=/
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Wed, 25 Apr 2018 02:09:18 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 25 Apr 2018 02:09:19 GMT
+recorded_with: VCR 4.0.0
