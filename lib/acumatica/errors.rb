@@ -10,6 +10,8 @@ module Acumatica
     def call(request_env)
       @app.call(request_env).on_complete do |env|
         case env[:status]
+          when 400
+            raise Acumatica::BadRequest.new(env)
           when 401
             raise Acumatica::Unauthorized.new(env)
           when 500
@@ -23,12 +25,19 @@ module Acumatica
     def initialize(env = {})
       super error_message(env)
     end
-  end
 
-  class Unauthorized < Error
     def error_message(env)
       env[:body]["message"]
     end
+  end
+
+  class BadRequest < Error
+    def error_message(env)
+      super(env) + ": " + env[:body]["modelState"].values.join(",")
+    end
+  end
+
+  class Unauthorized < Error
   end
 
   class InternalServerError < Error
