@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "faraday"
 require "faraday"
 require "faraday_middleware"
@@ -8,7 +10,7 @@ module Acumatica
   class Client
     include Singleton
 
-    API_VERSION = "6.00.001".freeze
+    API_VERSION = "6.00.001"
 
     attr_accessor :url, :name, :password, :token, :debug
 

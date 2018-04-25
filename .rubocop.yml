@@ -1,0 +1,21 @@
+inherit_from: .rubocop_todo.yml
+
+require: rubocop-rspec
+
+AllCops:
+  TargetRubyVersion: 2.4
+
+
+Metrics/BlockLength:
+  Exclude:
+    - acumatica.gemspec
+    - spec/support/**/*.rb
+
+Metrics/LineLength:
+  Max: 100
+
+Metrics/MethodLength:
+  Max: 15
+
+Style/StringLiterals:
+  Enabled: false

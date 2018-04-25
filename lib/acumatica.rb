@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "acumatica/client"
 require "acumatica/errors"
 

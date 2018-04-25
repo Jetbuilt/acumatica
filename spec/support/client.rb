@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def configure_client
   Acumatica::Client.configure do |config|
     config.url = ENV['ACUMATICA_URL']

@@ -82,6 +82,7 @@ acumatica.customers.create(customer_name: "ACME", tax_zone: "TAXES!")
 
 ## TODO
 - OAuth Authentication (coming soon)
+- Document public methods
 
 ## Contributing
 
