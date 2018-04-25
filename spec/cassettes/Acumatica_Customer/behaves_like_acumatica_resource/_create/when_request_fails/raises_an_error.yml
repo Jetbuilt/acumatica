@@ -1,0 +1,138 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: PLACEHOLDER_URL/entity/auth/login
+    body:
+      encoding: UTF-8
+      string: '{"name":"PLACEHOLDER_USER","password":"PLACEHOLDER_PASSWORD"}'
+    headers:
+      User-Agent:
+      - Faraday v0.15.0
+      Content-Type:
+      - application/json
+      Cookie:
+      - LegacyUI=0; Locale=TimeZone=GMTM0700A&Culture=en-US; UserBranch=1; requestid=41052
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Server:
+      - Microsoft-IIS/8.5
+      X-Handled-By:
+      - Acumatica-PX.Export/AuthenticationManagerModule
+      Set-Cookie:
+      - ".ASPXAUTH=3BED9B9378E87E14D0BCBA8981DB8872A7096E676E7FDC1EF66DB5648FA31CA970847711122E79F4BC20A2452B702B41B080CF0303F55FF0414F5C1FF637DAA53CC0E335A0C0DF7BD680FD2CFCEF3D06FFF1FA6CF68BCEEFD476D438D5BC7A9F6C4AE44AFEFB627CAC0EF108F5BC8ED7405CC1F57A5899227DEE6F1D9D429BCDEFD0F68B;
+        path=/; HttpOnly"
+      - ASP.NET_SessionId=wey5my1dcymarbxkhcpi3xva; path=/; HttpOnly
+      - CompanyID=CCSTest; expires=Fri, 27-Apr-2018 23:21:54 GMT; path=/
+      - LegacyUI=0; path=/
+      - Locale=Culture=en-US&TimeZone=GMTM0700A; expires=Fri, 27-Apr-2018 23:21:54
+        GMT; path=/
+      - UserBranch=1; path=/
+      - requestid=76325; path=/
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Tue, 24 Apr 2018 23:21:54 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 24 Apr 2018 23:21:54 GMT
+- request:
+    method: put
+    uri: PLACEHOLDER_URL/entity/Default/6.00.001/Customer
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.0
+      Cookie:
+      - ".ASPXAUTH=3BED9B9378E87E14D0BCBA8981DB8872A7096E676E7FDC1EF66DB5648FA31CA970847711122E79F4BC20A2452B702B41B080CF0303F55FF0414F5C1FF637DAA53CC0E335A0C0DF7BD680FD2CFCEF3D06FFF1FA6CF68BCEEFD476D438D5BC7A9F6C4AE44AFEFB627CAC0EF108F5BC8ED7405CC1F57A5899227DEE6F1D9D429BCDEFD0F68B;
+        ASP.NET_SessionId=wey5my1dcymarbxkhcpi3xva; CompanyID=CCSTest; LegacyUI=0;
+        Locale=Culture=en-US&TimeZone=GMTM0700A; UserBranch=1; requestid=76325"
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Server:
+      - Microsoft-IIS/8.5
+      X-Handled-By:
+      - Acumatica-PX.Export/AuthenticationManagerModule
+      Set-Cookie:
+      - LegacyUI=0; path=/
+      - Locale=TimeZone=GMTM0700A&Culture=en-US; path=/
+      - UserBranch=1; path=/
+      - requestid=76326; path=/
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Tue, 24 Apr 2018 23:21:54 GMT
+      Content-Length:
+      - '97'
+    body:
+      encoding: UTF-8
+      string: '{"message":"The request is invalid.","modelState":{"":["The request
+        body should not be empty."]}}'
+    http_version: 
+  recorded_at: Tue, 24 Apr 2018 23:21:54 GMT
+- request:
+    method: post
+    uri: PLACEHOLDER_URL/entity/auth/logout
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.0
+      Cookie:
+      - ".ASPXAUTH=3BED9B9378E87E14D0BCBA8981DB8872A7096E676E7FDC1EF66DB5648FA31CA970847711122E79F4BC20A2452B702B41B080CF0303F55FF0414F5C1FF637DAA53CC0E335A0C0DF7BD680FD2CFCEF3D06FFF1FA6CF68BCEEFD476D438D5BC7A9F6C4AE44AFEFB627CAC0EF108F5BC8ED7405CC1F57A5899227DEE6F1D9D429BCDEFD0F68B;
+        ASP.NET_SessionId=wey5my1dcymarbxkhcpi3xva; CompanyID=CCSTest; LegacyUI=0;
+        Locale=TimeZone=GMTM0700A&Culture=en-US; UserBranch=1; requestid=76326"
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Server:
+      - Microsoft-IIS/8.5
+      X-Handled-By:
+      - Acumatica-PX.Export/AuthenticationManagerModule
+      Set-Cookie:
+      - ".ASPXAUTH=; expires=Tue, 12-Oct-1999 00:00:00 GMT; path=/; HttpOnly"
+      - LegacyUI=0; path=/
+      - Locale=TimeZone=GMTM0700A&Culture=en-US; path=/
+      - UserBranch=1; path=/
+      - requestid=76327; path=/
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Tue, 24 Apr 2018 23:21:54 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 24 Apr 2018 23:21:54 GMT
+recorded_with: VCR 4.0.0

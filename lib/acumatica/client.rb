@@ -50,6 +50,10 @@ module Acumatica
       connection.post(URI.join(@url, "/entity/auth/logout")).success?
     end
 
+    def customers
+      Acumatica::Customer
+    end
+
     def stock_items
       Acumatica::StockItem
     end
