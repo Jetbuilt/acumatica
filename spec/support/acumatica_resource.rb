@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'support/client'
 
 RSpec.shared_examples "acumatica resource" do |valid_params|

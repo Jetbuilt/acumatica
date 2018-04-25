@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'faraday'
 
 module Acumatica
@@ -10,12 +12,12 @@ module Acumatica
     def call(request_env)
       @app.call(request_env).on_complete do |env|
         case env[:status]
-          when 400
-            raise Acumatica::BadRequest.new(env)
-          when 401
-            raise Acumatica::Unauthorized.new(env)
-          when 500
-            raise Acumatica::InternalServerError.new(env)
+        when 400
+          raise Acumatica::BadRequest, env
+        when 401
+          raise Acumatica::Unauthorized, env
+        when 500
+          raise Acumatica::InternalServerError, env
         end
       end
     end

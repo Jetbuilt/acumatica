@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 RSpec.describe Acumatica::Client do
   let(:client) do
-    Acumatica::Client.configure do |config|
+    described_class.configure do |config|
       config.url = ENV['ACUMATICA_URL']
       config.name = ENV['ACUMATICA_USER']
       config.password = password
