@@ -40,6 +40,12 @@ module Acumatica
       end
     end
 
+    def session
+      login
+      yield
+      logout
+    end
+
     def login
       response = connection.post do |req|
         req.url URI.join(@url, "/entity/auth/login")

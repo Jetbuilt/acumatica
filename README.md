@@ -29,17 +29,21 @@ acumatica = Acumatica::Client.configure do |config|
   config.password = "sekret"
 end
 
+# Manually log in/out
 acumatica.login
-
-acumatica.stock_items.find_all(
-  select: 'Attributes,InventoryID',
-  filter: '',
-  offset: 0,
-  limit:  100,
-  expand: 'Attributes'
-)
-
+acumatica.stock_items.find_all(limit: 1)
 acumatica.logout
+
+# Wrap calls in session to automatically log in/out
+acumatica.session do
+  acumatica.stock_items.find_all(
+    select: 'Attributes,InventoryID',
+    filter: '',
+    offset: 0,
+    limit:  100,
+    expand: 'Attributes'
+  )
+end
 ```    
 
 ### StockItem
@@ -78,7 +82,7 @@ acumatica.customers.create(customer_id: "123", customer_name: "ACME", tax_zone: 
   example, calling `find_all` on a resource without a limit may take minutes to complete the
   request. YMMV.
 - Some Acumatica installations limit the number of concurrent users, so make sure to logout when
-  finished.
+  finished or wrap calls with `Acumatica::Client#session`
 
 ## TODO
 - OAuth Authentication (coming soon)
