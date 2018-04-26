@@ -56,6 +56,10 @@ module Acumatica
       Acumatica::Customer
     end
 
+    def sales_orders
+      Acumatica::SalesOrder
+    end
+
     def stock_items
       Acumatica::StockItem
     end
