@@ -42,8 +42,9 @@ module Acumatica
 
     def session
       login
-      yield
+      result = yield
       logout
+      result
     end
 
     def login
