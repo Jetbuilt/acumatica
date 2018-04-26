@@ -72,11 +72,12 @@ module Acumatica
     end
 
     def methodify_separator
-      @separator ||= if Gem.loaded_specs["activesupport"].version < Gem::Version.create("5.0.0")
-                       '_'
-                     else
-                       { separator: '_' }
-                     end
-     end
+      @methodify_separator ||=
+        if Gem.loaded_specs["activesupport"].version < Gem::Version.create("5.0.0")
+          '_'
+        else
+          { separator: '_' }
+        end
+    end
   end
 end
