@@ -40,11 +40,8 @@ module Acumatica
 
       private
 
-      # translate keys that don't map directly
-      KEY_MAP = { customer_id: 'CustomerID' }.freeze
-
       def format_params(attrs)
-        attrs.transform_keys! { |key| KEY_MAP[key] || key.to_s.camelize }
+        attrs.transform_keys! { |key| key.to_s.camelize.gsub("Id", "ID") }
         attrs.transform_values! { |value| value.is_a?(Hash) ? value : { "value" => value } }
         attrs
       end
