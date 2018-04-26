@@ -2,7 +2,7 @@
 
 This gem provides a wrapper for the [Acumatica REST API](https://help.acumatica.com/Main?ScreenId=ShowWiki&pageid=ca2716f1-025a-4a6e-9090-797cf32b0459).
 
-
+![Gem](https://img.shields.io/gem/v/acumatica.svg)
 ![Travis](https://img.shields.io/travis/Jetbuilt/acumatica.svg)
 
 ## Installation
