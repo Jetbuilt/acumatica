@@ -32,4 +32,25 @@ RSpec.describe Acumatica::Client do
 
     it { is_expected.to be(true) }
   end
+
+  describe "#session" do
+    before do
+      allow(client).to receive(:login)
+      allow(client).to receive(:logout)
+    end
+
+    subject(:session) do
+      client.session do
+        block_return
+      end
+    end
+
+    let(:block_return) { "hello!" }
+
+    it 'returns the return value of the block passed', :aggregate_failures do
+      expect(session).to eq(block_return)
+      expect(client).to have_received(:login)
+      expect(client).to have_received(:logout)
+    end
+  end
 end
