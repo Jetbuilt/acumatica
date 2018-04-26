@@ -9,7 +9,7 @@ AllCops:
 Metrics/BlockLength:
   Exclude:
     - acumatica.gemspec
-    - spec/support/**/*.rb
+    - spec/**/*.rb
 
 Metrics/LineLength:
   Max: 100
