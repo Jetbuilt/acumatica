@@ -34,15 +34,15 @@ RSpec.describe Acumatica::Client do
   end
 
   describe "#session" do
-    before do
-      allow(client).to receive(:login)
-      allow(client).to receive(:logout)
-    end
-
     subject(:session) do
       client.session do
         block_return
       end
+    end
+
+    before do
+      allow(client).to receive(:login)
+      allow(client).to receive(:logout)
     end
 
     let(:block_return) { "hello!" }
