@@ -4,19 +4,20 @@ RSpec.describe Acumatica::SalesOrder do
   it_behaves_like "acumatica resource", customer_id: "100010"
 
   describe ".create" do
+    subject(:sales_order) { described_class.create(body, expand: 'Details') }
+
     let(:client) { configure_client }
 
     before { client.login }
-    after  { client.logout }
 
-    subject!(:sales_order) { described_class.create(body, expand: 'Details') }
+    after  { client.logout }
 
     context "with line details", :vcr do
       let(:body) do
         {
           customer_id: "100010",
           order_total: "2.00",
-          tax_total:   "0.16",
+          tax_total: "0.16",
           description: "Test!",
           details: [
             {

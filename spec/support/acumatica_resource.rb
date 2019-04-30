@@ -6,16 +6,17 @@ RSpec.shared_examples "acumatica resource" do |valid_params|
   let(:client) { configure_client }
 
   describe ".create", :vcr do
-    before { client.login }
-    after  { client.logout }
-
     subject(:request) { described_class.create(params) }
+
+    before { client.login }
+
+    after  { client.logout }
 
     context "when request succeeds" do
       let(:params) { valid_params }
 
       it "returns created resource" do
-        is_expected.to be_a(described_class)
+        expect(request).to be_a(described_class)
       end
     end
 
@@ -29,10 +30,11 @@ RSpec.shared_examples "acumatica resource" do |valid_params|
   end
 
   describe ".find_all", :vcr do
-    before { client.login }
-    after  { client.logout }
-
     subject(:results) { described_class.find_all(limit: 1) }
+
+    before { client.login }
+
+    after  { client.logout }
 
     it "returns array of resources" do
       expect(results).to all(be_a(described_class))
