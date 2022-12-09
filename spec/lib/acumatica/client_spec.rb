@@ -3,13 +3,13 @@
 RSpec.describe Acumatica::Client do
   let(:client) do
     described_class.configure do |config|
-      config.url = ENV['ACUMATICA_URL']
-      config.name = ENV['ACUMATICA_USER']
+      config.url  = ENV.fetch('ACUMATICA_URL')
+      config.name = ENV.fetch('ACUMATICA_USER')
       config.password = password
     end
   end
 
-  let(:password) { ENV['ACUMATICA_PASSWORD'] }
+  let(:password) { ENV.fetch('ACUMATICA_PASSWORD') }
 
   describe '#login', :vcr do
     subject(:request) { client.login }

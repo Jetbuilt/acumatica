@@ -14,9 +14,9 @@ VCR.configure do |c|
   c.hook_into :webmock
   c.configure_rspec_metadata!
 
-  c.filter_sensitive_data('PLACEHOLDER_URL')      { ENV['ACUMATICA_URL'] }
-  c.filter_sensitive_data('PLACEHOLDER_USER')     { ENV['ACUMATICA_USER'] }
-  c.filter_sensitive_data('PLACEHOLDER_PASSWORD') { ENV['ACUMATICA_PASSWORD'] }
+  c.filter_sensitive_data('PLACEHOLDER_URL')      { ENV.fetch('ACUMATICA_URL') }
+  c.filter_sensitive_data('PLACEHOLDER_USER')     { ENV.fetch('ACUMATICA_USER') }
+  c.filter_sensitive_data('PLACEHOLDER_PASSWORD') { ENV.fetch('ACUMATICA_PASSWORD') }
 end
 
 RSpec.configure do |config|

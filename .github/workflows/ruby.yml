@@ -11,6 +11,8 @@ permissions:
 
 env:
   ACUMATICA_URL: https://example.com
+  ACUMATICA_USER: user@install
+  ACUMATICA_PASSWORD: password
 
 jobs:
   test:
