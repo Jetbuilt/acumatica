@@ -3,6 +3,7 @@ inherit_from: .rubocop_todo.yml
 require: rubocop-rspec
 
 AllCops:
+  NewCops: enable
   TargetRubyVersion: 2.7
 
 Metrics/BlockLength:
@@ -15,6 +16,9 @@ Metrics/LineLength:
 
 Metrics/MethodLength:
   Max: 15
+
+Style/OpenStructUse:
+  Enabled: false
 
 Style/StringLiterals:
   Enabled: false
