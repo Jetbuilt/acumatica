@@ -35,7 +35,7 @@ module Acumatica
 
   class BadRequest < Error
     def error_message(env)
-      super(env) + ": " + env[:body]["modelState"].values.join(",")
+      "#{super(env)}: #{env[:body]['modelState'].values.join(',')}"
     end
   end
 

@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require "faraday"
-require "faraday"
 require "faraday_middleware"
 require "faraday-cookie_jar"
 require "singleton"
