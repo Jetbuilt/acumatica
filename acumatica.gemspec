@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.required_ruby_version = '>= 2.6.0'
+  spec.required_ruby_version = '>= 2.7.0'
 
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "byebug"
@@ -30,10 +30,10 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "guard-rspec"
   spec.add_development_dependency "guard-rubocop"
   spec.add_development_dependency "rake", "~> 13.0"
-  spec.add_development_dependency "rspec", "~> 3.7.0"
-  spec.add_development_dependency "rubocop", "~> 0.68.0"
-  spec.add_development_dependency "rubocop-performance", "~> 1.3.0"
-  spec.add_development_dependency "rubocop-rspec", "~> 1.32.0"
+  spec.add_development_dependency "rspec", "~> 3.12"
+  spec.add_development_dependency "rubocop", "~> 1.40"
+  spec.add_development_dependency "rubocop-performance", "~> 1.15.0"
+  spec.add_development_dependency "rubocop-rspec", "~> 2.15.0"
   spec.add_development_dependency "vcr"
   spec.add_development_dependency "webmock"
 

@@ -80,7 +80,7 @@ module Acumatica
     end
 
     def methodify(string)
-      string.underscore.parameterize(methodify_separator)
+      string.underscore.parameterize(**methodify_separator)
     end
 
     def methodify_separator
