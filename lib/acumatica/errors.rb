@@ -5,7 +5,7 @@ require 'faraday'
 module Acumatica
   class ErrorHandler < Faraday::Middleware
     def initialize(app)
-      super app
+      super(app)
       @parser = nil
     end
 
@@ -25,7 +25,7 @@ module Acumatica
 
   class Error < StandardError
     def initialize(env = {})
-      super error_message(env)
+      super(error_message(env))
     end
 
     def error_message(env)
