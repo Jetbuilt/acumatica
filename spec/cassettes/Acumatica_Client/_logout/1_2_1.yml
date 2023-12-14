@@ -8,7 +8,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.14.0
+      - Faraday v2.7.4
+      Cookie:
+      - ".ASPXAUTH=5CC5A2BA66A75A7B2C499143AB117BB631E484882245FA460F47352BC586956B81180DBA65F8CAD9B59AAF9E36F3AE2D3A8AB7FC83359D5E21543D869959591D50669263CDC4FE9B55305428DB94142B906D5003986FCE7FDBDCAC0560B9364E4D5E13E49D002689B6D2DFFAB758834E16DA7BF4A061B7C53939FF99522D2035BBF201D6D98C1774823B08F59FD7E51A43A9BA17;
+        ASP.NET_SessionId=x34gpaqyj1vw11in5qqhiacn; CompanyID=JETBUILT; Locale=Culture=en-US&TimeZone=GMTM0800A;
+        UserBranch=1; requestid=6B012D329006598311EE9A2669B1EE6B; requeststat=+st:116+sc:~/entity/auth/login+start:638381168348768275+tg:"
       Content-Length:
       - '0'
       Accept-Encoding:
@@ -20,20 +24,21 @@ http_interactions:
       code: 204
       message: No Content
     headers:
-      Server:
-      - Microsoft-IIS/8.5
-      X-Handled-By:
-      - Acumatica-PX.Export/AuthenticationManagerModule
       Set-Cookie:
-      - ASP.NET_SessionId=nykntfsi352ziicu45xvkvqh; path=/; HttpOnly
-      - requestid=13762; path=/
-      X-Powered-By:
-      - ASP.NET
+      - ".ASPXAUTH=; expires=Tue, 12-Oct-1999 00:00:00 GMT; path=/; HttpOnly"
+      - ".ASPXAUTH=; expires=Tue, 12-Oct-1999 00:00:00 GMT; path=/; HttpOnly"
+      - ASP.NET_SessionId=; expires=Wed, 14-Dec-2022 02:13:55 GMT; path=/
+      - ASP.NET_SessionId=; expires=Wed, 14-Dec-2022 02:13:55 GMT; path=/
+      - Locale=TimeZone=GMTM0800A&Culture=en-US; path=/
+      - Locale=TimeZone=GMTM0800A&Culture=en-US; path=/
+      - UserBranch=1; path=/
+      - UserBranch=1; path=/
+      - requestid=6B012D329006598311EE9A2669B1EE6D; path=/
+      - requeststat=+st:13+sc:~/entity/auth/logout+start:638381168351179923+tg:; path=/
       Date:
-      - Thu, 19 Apr 2018 02:09:20 GMT
+      - Thu, 14 Dec 2023 02:13:54 GMT
     body:
       encoding: UTF-8
       string: ''
-    http_version: 
-  recorded_at: Thu, 19 Apr 2018 02:09:20 GMT
-recorded_with: VCR 4.0.0
+  recorded_at: Thu, 14 Dec 2023 02:13:55 GMT
+recorded_with: VCR 6.1.0

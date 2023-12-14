@@ -12,10 +12,12 @@ module Acumatica
     def call(request_env)
       @app.call(request_env).on_complete do |env|
         case env[:status]
-        when 400
+        when 400, 412, 422
           raise Acumatica::BadRequest, env
-        when 401
+        when 401, 403
           raise Acumatica::Unauthorized, env
+        when 429
+          raise Acumatica::TooManyRequests, env
         when 500
           raise Acumatica::InternalServerError, env
         end
@@ -29,17 +31,17 @@ module Acumatica
     end
 
     def error_message(env)
-      env[:body]["message"]
+      env[:body]["error"]
     end
   end
 
   class BadRequest < Error
-    def error_message(env)
-      "#{super(env)}: #{env[:body]['modelState'].values.join(',')}"
-    end
   end
 
   class Unauthorized < Error
+  end
+
+  class TooManyRequests < Error
   end
 
   class InternalServerError < Error

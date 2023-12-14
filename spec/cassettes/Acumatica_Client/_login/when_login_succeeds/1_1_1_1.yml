@@ -8,9 +8,12 @@ http_interactions:
       string: '{"name":"PLACEHOLDER_USER","password":"PLACEHOLDER_PASSWORD"}'
     headers:
       User-Agent:
-      - Faraday v0.14.0
+      - Faraday v2.7.4
       Content-Type:
       - application/json
+      Cookie:
+      - 'CompanyID=JETBUILT; Locale=TimeZone=GMTM0800A&Culture=en-US; UserBranch=1;
+        requestid=6B012D329006598311EE9A2669B1EE6A; requeststat=+st:11+sc:~/entity/auth/logout+start:638381168347990442+tg:'
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -20,27 +23,27 @@ http_interactions:
       code: 204
       message: No Content
     headers:
-      Server:
-      - Microsoft-IIS/8.5
-      X-Handled-By:
-      - Acumatica-PX.Export/AuthenticationManagerModule
       Set-Cookie:
-      - ".ASPXAUTH=9C5457F82EA856C13F50ED7E1B1095EF6330CAFE04CA3A69B0AA8622DE94CA68E8AEB45C5DEC51BBAF431291FC5676F8C9AF2F643D047267E2F08B5196ECC08942F9C4BB4D1FC7F2B2A86028EAB5E6B25942976D5134BDB254AB8F36105B965468ABDBAEFDCA8C9DB5A61BEA34A00403E568611549C6E5744F943AB5653B20DCC1DC7571;
-        path=/; HttpOnly"
-      - ASP.NET_SessionId=cmuutgsimsemmt4x2uvsrksv; path=/; HttpOnly
-      - CompanyID=CCSTest; expires=Sun, 22-Apr-2018 02:07:18 GMT; path=/
-      - LegacyUI=0; path=/
-      - Locale=Culture=en-US&TimeZone=GMTM0700A; expires=Sun, 22-Apr-2018 02:07:18
+      - ".ASPXAUTH=5CC5A2BA66A75A7B2C499143AB117BB631E484882245FA460F47352BC586956B81180DBA65F8CAD9B59AAF9E36F3AE2D3A8AB7FC83359D5E21543D869959591D50669263CDC4FE9B55305428DB94142B906D5003986FCE7FDBDCAC0560B9364E4D5E13E49D002689B6D2DFFAB758834E16DA7BF4A061B7C53939FF99522D2035BBF201D6D98C1774823B08F59FD7E51A43A9BA17;
+        path=/; secure; HttpOnly; SameSite=None"
+      - ".ASPXAUTH=5CC5A2BA66A75A7B2C499143AB117BB631E484882245FA460F47352BC586956B81180DBA65F8CAD9B59AAF9E36F3AE2D3A8AB7FC83359D5E21543D869959591D50669263CDC4FE9B55305428DB94142B906D5003986FCE7FDBDCAC0560B9364E4D5E13E49D002689B6D2DFFAB758834E16DA7BF4A061B7C53939FF99522D2035BBF201D6D98C1774823B08F59FD7E51A43A9BA17;
+        path=/; secure; HttpOnly; SameSite=None"
+      - ASP.NET_SessionId=x34gpaqyj1vw11in5qqhiacn; path=/; HttpOnly; SameSite=Lax
+      - ASP.NET_SessionId=x34gpaqyj1vw11in5qqhiacn; path=/; HttpOnly; SameSite=Lax
+      - CompanyID=JETBUILT; expires=Sun, 17-Dec-2023 02:13:54 GMT; path=/
+      - CompanyID=JETBUILT; expires=Sun, 17-Dec-2023 02:13:54 GMT; path=/
+      - Locale=Culture=en-US&TimeZone=GMTM0800A; expires=Sun, 17-Dec-2023 02:13:54
+        GMT; path=/
+      - Locale=Culture=en-US&TimeZone=GMTM0800A; expires=Sun, 17-Dec-2023 02:13:54
         GMT; path=/
       - UserBranch=1; path=/
-      - requestid=13760; path=/
-      X-Powered-By:
-      - ASP.NET
+      - UserBranch=1; path=/
+      - requestid=6B012D329006598311EE9A2669B1EE6B; path=/
+      - requeststat=+st:116+sc:~/entity/auth/login+start:638381168348768275+tg:; path=/
       Date:
-      - Thu, 19 Apr 2018 02:07:18 GMT
+      - Thu, 14 Dec 2023 02:13:54 GMT
     body:
       encoding: UTF-8
       string: ''
-    http_version: 
-  recorded_at: Thu, 19 Apr 2018 02:07:19 GMT
-recorded_with: VCR 4.0.0
+  recorded_at: Thu, 14 Dec 2023 02:13:54 GMT
+recorded_with: VCR 6.1.0

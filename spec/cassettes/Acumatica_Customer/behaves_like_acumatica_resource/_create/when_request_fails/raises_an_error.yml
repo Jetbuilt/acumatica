@@ -8,11 +8,12 @@ http_interactions:
       string: '{"name":"PLACEHOLDER_USER","password":"PLACEHOLDER_PASSWORD"}'
     headers:
       User-Agent:
-      - Faraday v0.15.0
+      - Faraday v2.7.4
       Content-Type:
       - application/json
       Cookie:
-      - LegacyUI=0; Locale=TimeZone=GMTM0700A&Culture=en-US; UserBranch=1; requestid=41052
+      - 'CompanyID=JETBUILT; Locale=TimeZone=GMTM0800A&Culture=en-US; UserBranch=1;
+        requestid=6B012D329006598311EE9A26713CBEF0; requeststat=+st:12+sc:~/entity/auth/logout+start:638381168416877027+tg:'
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -22,42 +23,42 @@ http_interactions:
       code: 204
       message: No Content
     headers:
-      Server:
-      - Microsoft-IIS/8.5
-      X-Handled-By:
-      - Acumatica-PX.Export/AuthenticationManagerModule
       Set-Cookie:
-      - ".ASPXAUTH=3BED9B9378E87E14D0BCBA8981DB8872A7096E676E7FDC1EF66DB5648FA31CA970847711122E79F4BC20A2452B702B41B080CF0303F55FF0414F5C1FF637DAA53CC0E335A0C0DF7BD680FD2CFCEF3D06FFF1FA6CF68BCEEFD476D438D5BC7A9F6C4AE44AFEFB627CAC0EF108F5BC8ED7405CC1F57A5899227DEE6F1D9D429BCDEFD0F68B;
-        path=/; HttpOnly"
-      - ASP.NET_SessionId=wey5my1dcymarbxkhcpi3xva; path=/; HttpOnly
-      - CompanyID=CCSTest; expires=Fri, 27-Apr-2018 23:21:54 GMT; path=/
-      - LegacyUI=0; path=/
-      - Locale=Culture=en-US&TimeZone=GMTM0700A; expires=Fri, 27-Apr-2018 23:21:54
+      - ".ASPXAUTH=759188D199021A6D35596D96137F2DC07B8CFDFC1AF0294FCA6A196C53FECD0A6C1B1E5DA25A0EAC267A978EFD0986CCDE48E76C45185CC4DFDEC6C62E5E45F36B0C6A20285F712D9696AA51843B99F822E61E94E93417668924BF418D75341C6DC6DEA3F07DA941C66C35D89A9F10A923D99011C5EBAE32D9E7AFDAEAB86BB3B9797EC0B6E7452EEF6191D3155F63BB6EC47E0B;
+        path=/; secure; HttpOnly; SameSite=None"
+      - ".ASPXAUTH=759188D199021A6D35596D96137F2DC07B8CFDFC1AF0294FCA6A196C53FECD0A6C1B1E5DA25A0EAC267A978EFD0986CCDE48E76C45185CC4DFDEC6C62E5E45F36B0C6A20285F712D9696AA51843B99F822E61E94E93417668924BF418D75341C6DC6DEA3F07DA941C66C35D89A9F10A923D99011C5EBAE32D9E7AFDAEAB86BB3B9797EC0B6E7452EEF6191D3155F63BB6EC47E0B;
+        path=/; secure; HttpOnly; SameSite=None"
+      - ASP.NET_SessionId=c3khw02dvcavyzmeibalilzd; path=/; HttpOnly; SameSite=Lax
+      - ASP.NET_SessionId=c3khw02dvcavyzmeibalilzd; path=/; HttpOnly; SameSite=Lax
+      - CompanyID=JETBUILT; expires=Sun, 17-Dec-2023 02:14:01 GMT; path=/
+      - CompanyID=JETBUILT; expires=Sun, 17-Dec-2023 02:14:01 GMT; path=/
+      - Locale=Culture=en-US&TimeZone=GMTM0800A; expires=Sun, 17-Dec-2023 02:14:01
+        GMT; path=/
+      - Locale=Culture=en-US&TimeZone=GMTM0800A; expires=Sun, 17-Dec-2023 02:14:01
         GMT; path=/
       - UserBranch=1; path=/
-      - requestid=76325; path=/
-      X-Powered-By:
-      - ASP.NET
+      - UserBranch=1; path=/
+      - requestid=6B012D329006598311EE9A26713CBEF1; path=/
+      - requeststat=+st:171+sc:~/entity/auth/login+start:638381168417611845+tg:; path=/
       Date:
-      - Tue, 24 Apr 2018 23:21:54 GMT
+      - Thu, 14 Dec 2023 02:14:01 GMT
     body:
       encoding: UTF-8
       string: ''
-    http_version: 
-  recorded_at: Tue, 24 Apr 2018 23:21:54 GMT
+  recorded_at: Thu, 14 Dec 2023 02:14:01 GMT
 - request:
     method: put
-    uri: PLACEHOLDER_URL/entity/Default/6.00.001/Customer
+    uri: PLACEHOLDER_URL/entity/Default/20.200.001/Customer
     body:
       encoding: UTF-8
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.15.0
+      - Faraday v2.7.4
       Cookie:
-      - ".ASPXAUTH=3BED9B9378E87E14D0BCBA8981DB8872A7096E676E7FDC1EF66DB5648FA31CA970847711122E79F4BC20A2452B702B41B080CF0303F55FF0414F5C1FF637DAA53CC0E335A0C0DF7BD680FD2CFCEF3D06FFF1FA6CF68BCEEFD476D438D5BC7A9F6C4AE44AFEFB627CAC0EF108F5BC8ED7405CC1F57A5899227DEE6F1D9D429BCDEFD0F68B;
-        ASP.NET_SessionId=wey5my1dcymarbxkhcpi3xva; CompanyID=CCSTest; LegacyUI=0;
-        Locale=Culture=en-US&TimeZone=GMTM0700A; UserBranch=1; requestid=76325"
+      - ".ASPXAUTH=759188D199021A6D35596D96137F2DC07B8CFDFC1AF0294FCA6A196C53FECD0A6C1B1E5DA25A0EAC267A978EFD0986CCDE48E76C45185CC4DFDEC6C62E5E45F36B0C6A20285F712D9696AA51843B99F822E61E94E93417668924BF418D75341C6DC6DEA3F07DA941C66C35D89A9F10A923D99011C5EBAE32D9E7AFDAEAB86BB3B9797EC0B6E7452EEF6191D3155F63BB6EC47E0B;
+        ASP.NET_SessionId=c3khw02dvcavyzmeibalilzd; CompanyID=JETBUILT; Locale=Culture=en-US&TimeZone=GMTM0800A;
+        UserBranch=1; requestid=6B012D329006598311EE9A26713CBEF1; requeststat=+st:171+sc:~/entity/auth/login+start:638381168417611845+tg:"
       Content-Length:
       - '0'
       Accept-Encoding:
@@ -71,27 +72,23 @@ http_interactions:
     headers:
       Content-Type:
       - application/json; charset=utf-8
-      Server:
-      - Microsoft-IIS/8.5
-      X-Handled-By:
-      - Acumatica-PX.Export/AuthenticationManagerModule
       Set-Cookie:
-      - LegacyUI=0; path=/
-      - Locale=TimeZone=GMTM0700A&Culture=en-US; path=/
+      - Locale=TimeZone=GMTM0800A&Culture=en-US; path=/
+      - Locale=TimeZone=GMTM0800A&Culture=en-US; path=/
       - UserBranch=1; path=/
-      - requestid=76326; path=/
-      X-Powered-By:
-      - ASP.NET
+      - UserBranch=1; path=/
+      - requestid=6B012D329006598311EE9A26713CBF55; path=/
+      - requeststat=+st:8+sc:~/entity/default/20.200.001/customer+start:638381168419947835+tg:;
+        path=/
       Date:
-      - Tue, 24 Apr 2018 23:21:54 GMT
+      - Thu, 14 Dec 2023 02:14:01 GMT
       Content-Length:
       - '97'
     body:
       encoding: UTF-8
       string: '{"message":"The request is invalid.","modelState":{"":["The request
         body should not be empty."]}}'
-    http_version: 
-  recorded_at: Tue, 24 Apr 2018 23:21:54 GMT
+  recorded_at: Thu, 14 Dec 2023 02:14:01 GMT
 - request:
     method: post
     uri: PLACEHOLDER_URL/entity/auth/logout
@@ -100,11 +97,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.15.0
+      - Faraday v2.7.4
       Cookie:
-      - ".ASPXAUTH=3BED9B9378E87E14D0BCBA8981DB8872A7096E676E7FDC1EF66DB5648FA31CA970847711122E79F4BC20A2452B702B41B080CF0303F55FF0414F5C1FF637DAA53CC0E335A0C0DF7BD680FD2CFCEF3D06FFF1FA6CF68BCEEFD476D438D5BC7A9F6C4AE44AFEFB627CAC0EF108F5BC8ED7405CC1F57A5899227DEE6F1D9D429BCDEFD0F68B;
-        ASP.NET_SessionId=wey5my1dcymarbxkhcpi3xva; CompanyID=CCSTest; LegacyUI=0;
-        Locale=TimeZone=GMTM0700A&Culture=en-US; UserBranch=1; requestid=76326"
+      - ".ASPXAUTH=759188D199021A6D35596D96137F2DC07B8CFDFC1AF0294FCA6A196C53FECD0A6C1B1E5DA25A0EAC267A978EFD0986CCDE48E76C45185CC4DFDEC6C62E5E45F36B0C6A20285F712D9696AA51843B99F822E61E94E93417668924BF418D75341C6DC6DEA3F07DA941C66C35D89A9F10A923D99011C5EBAE32D9E7AFDAEAB86BB3B9797EC0B6E7452EEF6191D3155F63BB6EC47E0B;
+        ASP.NET_SessionId=c3khw02dvcavyzmeibalilzd; CompanyID=JETBUILT; Locale=Culture=en-US&TimeZone=GMTM0800A;
+        UserBranch=1; requestid=6B012D329006598311EE9A26713CBEF1; requeststat=+st:171+sc:~/entity/auth/login+start:638381168417611845+tg:"
       Content-Length:
       - '0'
       Accept-Encoding:
@@ -116,23 +113,21 @@ http_interactions:
       code: 204
       message: No Content
     headers:
-      Server:
-      - Microsoft-IIS/8.5
-      X-Handled-By:
-      - Acumatica-PX.Export/AuthenticationManagerModule
       Set-Cookie:
       - ".ASPXAUTH=; expires=Tue, 12-Oct-1999 00:00:00 GMT; path=/; HttpOnly"
-      - LegacyUI=0; path=/
-      - Locale=TimeZone=GMTM0700A&Culture=en-US; path=/
+      - ".ASPXAUTH=; expires=Tue, 12-Oct-1999 00:00:00 GMT; path=/; HttpOnly"
+      - ASP.NET_SessionId=; expires=Wed, 14-Dec-2022 02:14:02 GMT; path=/
+      - ASP.NET_SessionId=; expires=Wed, 14-Dec-2022 02:14:02 GMT; path=/
+      - Locale=TimeZone=GMTM0800A&Culture=en-US; path=/
+      - Locale=TimeZone=GMTM0800A&Culture=en-US; path=/
       - UserBranch=1; path=/
-      - requestid=76327; path=/
-      X-Powered-By:
-      - ASP.NET
+      - UserBranch=1; path=/
+      - requestid=6B012D329006598311EE9A26713CBF56; path=/
+      - requeststat=+st:12+sc:~/entity/auth/logout+start:638381168420631952+tg:; path=/
       Date:
-      - Tue, 24 Apr 2018 23:21:54 GMT
+      - Thu, 14 Dec 2023 02:14:01 GMT
     body:
       encoding: UTF-8
       string: ''
-    http_version: 
-  recorded_at: Tue, 24 Apr 2018 23:21:54 GMT
-recorded_with: VCR 4.0.0
+  recorded_at: Thu, 14 Dec 2023 02:14:02 GMT
+recorded_with: VCR 6.1.0

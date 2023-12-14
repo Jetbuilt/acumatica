@@ -1,6 +1,7 @@
 # Acumatica
 
-This gem provides a wrapper for the [Acumatica REST API](https://help.acumatica.com/Main?ScreenId=ShowWiki&pageid=ca2716f1-025a-4a6e-9090-797cf32b0459).
+This gem provides a wrapper for the [Acumatica REST API](https://help.acumatica.com/Help?ScreenId=ShowWiki&pageid=ff22837c-cd3a-410e-b768-88ca6e53b165),
+currently targeting API version *20.200.001*
 
 ![Gem](https://img.shields.io/gem/v/acumatica.svg)
 ![Travis](https://img.shields.io/travis/Jetbuilt/acumatica.svg)
@@ -47,7 +48,7 @@ acumatica.session do
     expand: 'Attributes'
   )
 end
-```    
+```
 
 ### StockItem
 
