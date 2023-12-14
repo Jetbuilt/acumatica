@@ -19,7 +19,7 @@ RSpec.describe Acumatica::Client do
     end
 
     context 'when login fails' do
-      let(:password) { nil }
+      let(:password) { 'wrong' }
 
       it 'raises an error' do
         expect { request }.to raise_error(Acumatica::InternalServerError, /Invalid credentials/)

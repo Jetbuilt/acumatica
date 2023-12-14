@@ -8,9 +8,12 @@ http_interactions:
       string: '{"name":"PLACEHOLDER_USER","password":"PLACEHOLDER_PASSWORD"}'
     headers:
       User-Agent:
-      - Faraday v0.15.0
+      - Faraday v2.7.4
       Content-Type:
       - application/json
+      Cookie:
+      - 'CompanyID=JETBUILT; Locale=TimeZone=GMTM0800A&Culture=en-US; UserBranch=1;
+        requestid=6B012D329006598311EE9A2669B1EE4D; requeststat=+st:11+sc:~/entity/auth/logout+start:638381168313466803+tg:'
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -20,42 +23,42 @@ http_interactions:
       code: 204
       message: No Content
     headers:
-      Server:
-      - Microsoft-IIS/8.5
-      X-Handled-By:
-      - Acumatica-PX.Export/AuthenticationManagerModule
       Set-Cookie:
-      - ".ASPXAUTH=996417642C0E01041F946075CB5BBB241A383BF8FDF0B2354286F2D777CA29EB8EEC681C9027950E66678944CA0B0CDF37D21712E0716B559BA3EEB13212008BA97A56052343AE0454EC63194F461FD0D6FFBACDD40585CADFAFDF0BA694AC58661FD4B19BCE0CAC44C95F8A489075E4989D05C0D7BF0473C7CD6C6F15A1F70827BEAFB6;
-        path=/; HttpOnly"
-      - ASP.NET_SessionId=d3fldwzjiuy0lmgv0zms20r5; path=/; HttpOnly
-      - CompanyID=CCSTest; expires=Sat, 28-Apr-2018 01:58:41 GMT; path=/
-      - LegacyUI=0; path=/
-      - Locale=Culture=en-US&TimeZone=GMTM0700A; expires=Sat, 28-Apr-2018 01:58:41
+      - ".ASPXAUTH=CC8878746CD2DEB9D32E642F8B3E20F4F338FE90091B1880C8925AE033D1E846BC72621DCEE1421F0260A56F904DA92E5D6273720A614326EFE7C5F9F4F6BB9C7FDB7FF0638612D59F97EBB87E4936CE88CF4544E43A5689B2307D80F902446C6CA02CD78886EFDC85C19AFFFB62B6471237B0C11CB26239E7331943A0C3B47A92E9565D8CEAB5CB585EBFE6829ECBE28F7F42FA;
+        path=/; secure; HttpOnly; SameSite=None"
+      - ".ASPXAUTH=CC8878746CD2DEB9D32E642F8B3E20F4F338FE90091B1880C8925AE033D1E846BC72621DCEE1421F0260A56F904DA92E5D6273720A614326EFE7C5F9F4F6BB9C7FDB7FF0638612D59F97EBB87E4936CE88CF4544E43A5689B2307D80F902446C6CA02CD78886EFDC85C19AFFFB62B6471237B0C11CB26239E7331943A0C3B47A92E9565D8CEAB5CB585EBFE6829ECBE28F7F42FA;
+        path=/; secure; HttpOnly; SameSite=None"
+      - ASP.NET_SessionId=iraaq25aqt3gxvvnmae302o5; path=/; HttpOnly; SameSite=Lax
+      - ASP.NET_SessionId=iraaq25aqt3gxvvnmae302o5; path=/; HttpOnly; SameSite=Lax
+      - CompanyID=JETBUILT; expires=Sun, 17-Dec-2023 02:13:51 GMT; path=/
+      - CompanyID=JETBUILT; expires=Sun, 17-Dec-2023 02:13:51 GMT; path=/
+      - Locale=Culture=en-US&TimeZone=GMTM0800A; expires=Sun, 17-Dec-2023 02:13:51
+        GMT; path=/
+      - Locale=Culture=en-US&TimeZone=GMTM0800A; expires=Sun, 17-Dec-2023 02:13:51
         GMT; path=/
       - UserBranch=1; path=/
-      - requestid=77887; path=/
-      X-Powered-By:
-      - ASP.NET
+      - UserBranch=1; path=/
+      - requestid=6B012D329006598311EE9A2669B1EE4E; path=/
+      - requeststat=+st:116+sc:~/entity/auth/login+start:638381168314152839+tg:; path=/
       Date:
-      - Wed, 25 Apr 2018 01:58:41 GMT
+      - Thu, 14 Dec 2023 02:13:51 GMT
     body:
       encoding: UTF-8
       string: ''
-    http_version: 
-  recorded_at: Wed, 25 Apr 2018 01:58:42 GMT
+  recorded_at: Thu, 14 Dec 2023 02:13:51 GMT
 - request:
     method: get
-    uri: PLACEHOLDER_URL/entity/Default/6.00.001/SalesOrder?$top=1
+    uri: PLACEHOLDER_URL/entity/Default/20.200.001/SalesOrder?$top=1
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.15.0
+      - Faraday v2.7.4
       Cookie:
-      - ".ASPXAUTH=996417642C0E01041F946075CB5BBB241A383BF8FDF0B2354286F2D777CA29EB8EEC681C9027950E66678944CA0B0CDF37D21712E0716B559BA3EEB13212008BA97A56052343AE0454EC63194F461FD0D6FFBACDD40585CADFAFDF0BA694AC58661FD4B19BCE0CAC44C95F8A489075E4989D05C0D7BF0473C7CD6C6F15A1F70827BEAFB6;
-        ASP.NET_SessionId=d3fldwzjiuy0lmgv0zms20r5; CompanyID=CCSTest; LegacyUI=0;
-        Locale=Culture=en-US&TimeZone=GMTM0700A; UserBranch=1; requestid=77887"
+      - ".ASPXAUTH=CC8878746CD2DEB9D32E642F8B3E20F4F338FE90091B1880C8925AE033D1E846BC72621DCEE1421F0260A56F904DA92E5D6273720A614326EFE7C5F9F4F6BB9C7FDB7FF0638612D59F97EBB87E4936CE88CF4544E43A5689B2307D80F902446C6CA02CD78886EFDC85C19AFFFB62B6471237B0C11CB26239E7331943A0C3B47A92E9565D8CEAB5CB585EBFE6829ECBE28F7F42FA;
+        ASP.NET_SessionId=iraaq25aqt3gxvvnmae302o5; CompanyID=JETBUILT; Locale=Culture=en-US&TimeZone=GMTM0800A;
+        UserBranch=1; requestid=6B012D329006598311EE9A2669B1EE4E; requeststat=+st:116+sc:~/entity/auth/login+start:638381168314152839+tg:"
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -67,25 +70,18 @@ http_interactions:
     headers:
       Content-Type:
       - application/json; charset=utf-8
-      Server:
-      - Microsoft-IIS/8.5
-      X-Handled-By:
-      - Acumatica-PX.Export/AuthenticationManagerModule
       Set-Cookie:
-      - LegacyUI=0; path=/
-      - Locale=TimeZone=GMTM0700A&Culture=en-US; path=/
+      - Locale=TimeZone=GMTM0800A&Culture=en-US; path=/
       - UserBranch=1; path=/
-      X-Powered-By:
-      - ASP.NET
       Date:
-      - Wed, 25 Apr 2018 01:58:47 GMT
+      - Thu, 14 Dec 2023 02:13:51 GMT
       Content-Length:
-      - '1040'
+      - '1393'
     body:
       encoding: UTF-8
-      string: '[{"id":"a06ea879-21df-4664-87d2-5f3d92e500d5","rowNumber":1,"note":"","BillingAddressOverride":{"value":false},"BillingContactOverride":{"value":false},"CreditHold":{"value":false},"Currency":{"value":"USD"},"CustomerID":{"value":"TOMTEST"},"CustomerOrder":{},"Date":{"value":"2017-02-06T00:00:00+00:00"},"Description":{"value":"SSS"},"DestinationWarehouseID":{},"ExternalReference":{},"Hold":{"value":false},"IsTaxValid":{"value":false},"LastModified":{"value":"2017-02-21T17:32:53.967+00:00"},"LocationID":{"value":"MAIN"},"NewCard":{"value":false},"OrderedQty":{"value":3.000000},"OrderNbr":{"value":"0000000001"},"OrderTotal":{"value":1190.0000},"OrderType":{"value":"SO"},"PaymentCardIdentifier":{},"PaymentMethod":{"value":"CHECK"},"PaymentRef":{},"PreferredWarehouseID":{},"Project":{"value":"PR00000356"},"RequestedOn":{"value":"2017-02-06T00:00:00+00:00"},"ShippingAddressOverride":{"value":false},"ShippingContactOverride":{"value":false},"ShipVia":{},"Status":{"value":"Open"},"TaxTotal":{"value":0.0000},"custom":{},"files":[]}]'
-    http_version: 
-  recorded_at: Wed, 25 Apr 2018 01:58:47 GMT
+      string: '[{"id":"7adbf4e5-4e48-ea11-817f-eb1af000b4cf","rowNumber":1,"note":{"value":""},"Approved":{"value":true},"BaseCurrencyID":{"value":"USD"},"BillToAddressOverride":{"value":false},"BillToAddressValidated":{"value":true},"BillToContactOverride":{"value":false},"CashAccount":{},"ContactID":{},"ControlTotal":{"value":7000.0000},"CreditHold":{"value":false},"CurrencyID":{"value":"USD"},"CurrencyRate":{"value":1.00000000},"CurrencyRateTypeID":{},"CustomerID":{"value":"C1051"},"CustomerOrder":{"value":"077204"},"Date":{"value":"2020-02-05T00:00:00+00:00"},"Description":{"value":"6460TM
+        - Battery Replacement"},"DestinationWarehouseID":{},"DisableAutomaticDiscountUpdate":{"value":false},"EffectiveDate":{"value":"2020-02-05T00:00:00+00:00"},"ExternalRef":{},"Hold":{"value":false},"IsTaxValid":{},"LastModified":{"value":"2020-03-20T17:41:27.34+00:00"},"LocationID":{"value":"01"},"OrderedQty":{"value":0.000000},"OrderNbr":{"value":"S20-100001"},"OrderTotal":{"value":7000.0000},"OrderType":{"value":"SO"},"PaymentMethod":{},"PreferredWarehouseID":{},"Project":{"value":"TM11147"},"ReciprocalRate":{"value":1.00000000},"RequestedOn":{"value":"2020-02-05T00:00:00+00:00"},"ShipToAddressOverride":{"value":false},"ShipToAddressValidated":{"value":false},"ShipToContactOverride":{"value":false},"ShipVia":{"value":"TRUCK"},"Status":{"value":"Completed"},"TaxTotal":{"value":0.0000},"custom":{}}]'
+  recorded_at: Thu, 14 Dec 2023 02:13:51 GMT
 - request:
     method: post
     uri: PLACEHOLDER_URL/entity/auth/logout
@@ -94,11 +90,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.15.0
+      - Faraday v2.7.4
       Cookie:
-      - ".ASPXAUTH=996417642C0E01041F946075CB5BBB241A383BF8FDF0B2354286F2D777CA29EB8EEC681C9027950E66678944CA0B0CDF37D21712E0716B559BA3EEB13212008BA97A56052343AE0454EC63194F461FD0D6FFBACDD40585CADFAFDF0BA694AC58661FD4B19BCE0CAC44C95F8A489075E4989D05C0D7BF0473C7CD6C6F15A1F70827BEAFB6;
-        ASP.NET_SessionId=d3fldwzjiuy0lmgv0zms20r5; CompanyID=CCSTest; LegacyUI=0;
-        Locale=TimeZone=GMTM0700A&Culture=en-US; UserBranch=1; requestid=77887"
+      - ".ASPXAUTH=CC8878746CD2DEB9D32E642F8B3E20F4F338FE90091B1880C8925AE033D1E846BC72621DCEE1421F0260A56F904DA92E5D6273720A614326EFE7C5F9F4F6BB9C7FDB7FF0638612D59F97EBB87E4936CE88CF4544E43A5689B2307D80F902446C6CA02CD78886EFDC85C19AFFFB62B6471237B0C11CB26239E7331943A0C3B47A92E9565D8CEAB5CB585EBFE6829ECBE28F7F42FA;
+        ASP.NET_SessionId=iraaq25aqt3gxvvnmae302o5; CompanyID=JETBUILT; Locale=TimeZone=GMTM0800A&Culture=en-US;
+        UserBranch=1; requestid=6B012D329006598311EE9A2669B1EE4E; requeststat=+st:116+sc:~/entity/auth/login+start:638381168314152839+tg:"
       Content-Length:
       - '0'
       Accept-Encoding:
@@ -110,23 +106,21 @@ http_interactions:
       code: 204
       message: No Content
     headers:
-      Server:
-      - Microsoft-IIS/8.5
-      X-Handled-By:
-      - Acumatica-PX.Export/AuthenticationManagerModule
       Set-Cookie:
       - ".ASPXAUTH=; expires=Tue, 12-Oct-1999 00:00:00 GMT; path=/; HttpOnly"
-      - LegacyUI=0; path=/
-      - Locale=TimeZone=GMTM0700A&Culture=en-US; path=/
+      - ".ASPXAUTH=; expires=Tue, 12-Oct-1999 00:00:00 GMT; path=/; HttpOnly"
+      - ASP.NET_SessionId=; expires=Wed, 14-Dec-2022 02:13:52 GMT; path=/
+      - ASP.NET_SessionId=; expires=Wed, 14-Dec-2022 02:13:52 GMT; path=/
+      - Locale=TimeZone=GMTM0800A&Culture=en-US; path=/
+      - Locale=TimeZone=GMTM0800A&Culture=en-US; path=/
       - UserBranch=1; path=/
-      - requestid=77888; path=/
-      X-Powered-By:
-      - ASP.NET
+      - UserBranch=1; path=/
+      - requestid=6B012D329006598311EE9A2669B1EE50; path=/
+      - requeststat=+st:11+sc:~/entity/auth/logout+start:638381168321172561+tg:; path=/
       Date:
-      - Wed, 25 Apr 2018 01:58:47 GMT
+      - Thu, 14 Dec 2023 02:13:51 GMT
     body:
       encoding: UTF-8
       string: ''
-    http_version: 
-  recorded_at: Wed, 25 Apr 2018 01:58:48 GMT
-recorded_with: VCR 4.0.0
+  recorded_at: Thu, 14 Dec 2023 02:13:52 GMT
+recorded_with: VCR 6.1.0
